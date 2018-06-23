@@ -6,3 +6,108 @@ body {
 a {
   color: #00B7FF;
 }
+
+//Layout Styling
+body, html {
+  margin: 0;
+}
+#layout{
+  width: 100%;
+  font-family: Verdana;
+}
+#outer{
+  width: 80%;
+  min-width: 800px;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+#static{
+  float: left;
+  height: 100%;
+  width: 150px;
+  min-height: 150px;
+  margin-right: 10px;
+}
+#dynamic{
+  overflow: hidden;
+  box-shadow: 3px 3px 3px grey;
+}
+
+/* Content related css*/
+.content{
+width: 100%;
+height: auto;
+background-color: #EFEFEF;
+dislay: inline;
+box-shadow: 3px 3px 3px grey;
+padding: 10px;
+}
+
+.contentheader{
+width:100%;
+height: 50px;
+background-color: #FF3B3F;
+}
+/* Side menu related css*/
+.sidemenu {
+position: fixed;
+/*margin-top: 50px;*/
+background-color: #CAEBF2;
+border-width: 1px;
+width: 150px;
+height: auto;
+float: left;
+box-shadow: 3px 3px 3px grey;
+}
+.item {
+border-width: 5px;
+padding-left: 5%;
+padding-right: 5%;
+width: 90%;
+height: 50px;
+border-bottom: solid;
+border-width: 1px;
+}
+.item#end {
+border-bottom: none;
+}
+.item#start{
+}
+.item::after{
+color: #FF3B3F;
+}
+.item:hover {
+background-color: #FF3B3F;
+border-color: black;
+color: white;
+}
+.item:active {
+background-color: #FF3B3F;
+border-color: black;
+color: white;
+}
+
+.linktitle {
+text-align: center;
+height: 100%;
+padding-top: 10%;
+}
+/* Topbar related css */
+.topbar{
+width: 100%;
+height: 50px;
+background-color: #FF3B3F;
+box-shadow: 3px 3px 3px grey;
+}
+
+.title{
+padding-top: 10px;
+padding-left: 10px;
+text-align: left;
+font-family: Verdana;
+font-size: 25px;
+color: #FFFFFF;
+
+}

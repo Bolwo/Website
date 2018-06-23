@@ -3,5 +3,32 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+
+  #layout
+    #outer
+      #static
+        .sidemenu
+          .item#start
+            .linktitle CV
+          .item
+            .linktitle Papers
+          .item
+            .linktitle Projects
+          .item
+            .linktitle About
+          .item#end
+            .linktitle Contact
+
+      #dynamic
+        .contentheader
+          .title #{title}
+        .content     
+            body
+              block content
+
+
+
+
+
+
+
