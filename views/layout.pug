@@ -8,16 +8,21 @@ html
     #outer
       #static
         .sidemenu
-          .item#start
-            .linktitle CV
+          .item#start 
+            a(href='/cv')
+              .linktitle CV
           .item
-            .linktitle Papers
+            a(href='/papers')
+              .linktitle Papers
           .item
-            .linktitle Projects
+            a(href='/projects')
+              .linktitle Projects
           .item
-            .linktitle About
+            a(href='/about')
+              .linktitle About
           .item#end
-            .linktitle Contact
+            a(href='/contact')
+              .linktitle Contact
 
       #dynamic
         .contentheader
@@ -26,8 +31,11 @@ html
             body
               block content
 
-
-
+script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+script.
+  function menuClick(button) {
+    $.get('/cv')
+  }
 
 
 

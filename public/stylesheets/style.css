@@ -1,12 +1,3 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
 //Layout Styling
 body, html {
   margin: 0;
@@ -60,6 +51,11 @@ width: 150px;
 height: auto;
 float: left;
 box-shadow: 3px 3px 3px grey;
+}
+.sidemenu, a {
+  color: black;
+  text-decoration: none;
+  
 }
 .item {
 border-width: 5px;
