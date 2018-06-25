@@ -28,7 +28,6 @@ body, html {
 
 /* Content related css*/
 .content{
-
 width: 98%;
 height: auto;
 background-color: #EFEFEF;
@@ -44,7 +43,6 @@ background-color: #FF3B3F;
 /* Side menu related css*/
 .sidemenu {
 position: fixed;
-/*margin-top: 50px;*/
 background-color: #CAEBF2;
 border-width: 1px;
 width: 150px;
@@ -55,7 +53,6 @@ box-shadow: 3px 3px 3px grey;
 .sidemenu, a {
   color: black;
   text-decoration: none;
-  
 }
 .item {
 border-width: 5px;
@@ -68,22 +65,21 @@ border-width: 1px;
 text-align: center;
 padding-top: 10%;
 }
-.item#end {
+.item.end {
 border-bottom: none;
 }
 
 .item:hover {
 background-color: #ade0eb;
-border-color: black;
 }
 .item:active {
 background-color: #FF3B3F;
-border-color: black;
+border-color: white;
 color: white;
 }
-#clicked{
+.item#clicked{
     background-color: #FF3B3F;
-    color: white
+    color: white; 
 }
 
 /* Topbar related css */

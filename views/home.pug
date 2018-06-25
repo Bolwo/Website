@@ -2,8 +2,11 @@ extends layout
 
 block content
   
-  .heading1.fontcambria.orange Jaco van Cranenburgh 
-  .heading2.fontcambria.orange Richmond, London <br/> mail@jaco.site <br/> 07719975115
+  .leftcolumn
+    img(src="/images/photo.png" alt="PLACEHOLDER" height="200px")
+  .rightcolumn
+    .heading1.fontcambria.orange Jaco van Cranenburgh 
+    .heading2.fontcambria.orange Richmond, London <br/> mail@jaco.site <br/> 07719975115
   p
     .basictext Hardworking software developer with a degree in Computer Science. Keen to learn, adapt and improve my technical skills through a career. I have been very interested in computing since I was young, and over the last 7 years have become passionate about programming and moving forward into a software development career. 
   p
@@ -22,11 +25,5 @@ block content
       li ASP.net
       li IT Support
       li AWS Lambda/Beanstalk
-  p
 
-  script.
-    window.onload = function(){
-      console.log("#{title}")
-      var button = document.getElementById("#{title}");
-      button.style.backgroundcolor = '#FFFFFF'
-    };
+
