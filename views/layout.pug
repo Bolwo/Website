@@ -1,31 +1,31 @@
 doctype html
 html
   head
-    title= title
+    title= 'Jaco van Cranenburgh'
     link(rel='stylesheet', href='/stylesheets/style.css')
 
   #layout
     #outer
       #static
         .sidemenu
-          .item#start 
-            a(href='/About')
-              .linktitle About
-          .item
-            a(href='/Education')
-              .linktitle Education
-          .item 
-            a(href='/Experience')
-              .linktitle Experience
-          .item
-            a(href='/Projects')
-              .linktitle Projects
-          .item
-            a(href='/Papers')
-              .linktitle Papers
-          .item#end
-            a(href='/Contact')
-              .linktitle Contact
+          a(href='/home')
+            .item.start#Home Home
+            
+          a(href='/Education')  
+            .item#Education Education
+           
+          a(href='/Experience')
+            .item#Experience Experience
+
+          a(href='/Projects') 
+            .item#Projects Projects
+          
+          a(href='/Papers')
+            .item#Papers Papers
+            
+          a(href='/Contact')  
+           .item.end#Contact Contact
+         
 
       #dynamic
         .contentheader
@@ -35,8 +35,14 @@ html
               block content
 
 script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+
 script.
-  
+  window.onload = function(){
+    console.log("#{title}")
+    var button = document.getElementById("#{title}");
+    button.id = "clicked";
+    console.log(button.id)
+  };
 
 
 

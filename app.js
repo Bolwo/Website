@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var cvRouter = require('./routes/CV');
-var aboutRouter = require('./routes/about');
+var homeRouter = require('./routes/home');
 var contactRouter = require('./routes/contact');
 var papersRouter = require('./routes/papers');
 var projectsRouter = require('./routes/projects');
@@ -25,9 +25,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', aboutRouter);
+app.use('/', homeRouter);
 app.use('/CV', cvRouter);
-app.use('/about', aboutRouter);
+app.use('/home', homeRouter);
 app.use('/contact', contactRouter);
 app.use('/papers', papersRouter);
 app.use('/projects', projectsRouter);

@@ -62,34 +62,30 @@ border-width: 5px;
 padding-left: 5%;
 padding-right: 5%;
 width: 90%;
-height: 50px;
+height: 35px;
 border-bottom: solid;
 border-width: 1px;
+text-align: center;
+padding-top: 10%;
 }
 .item#end {
 border-bottom: none;
 }
-.item#start{
-}
-.item::after{
-color: #FF3B3F;
-}
+
 .item:hover {
-background-color: #FF3B3F;
+background-color: #ade0eb;
 border-color: black;
-color: white;
 }
 .item:active {
 background-color: #FF3B3F;
 border-color: black;
 color: white;
 }
-
-.linktitle {
-text-align: center;
-height: 100%;
-padding-top: 10%;
+#clicked{
+    background-color: #FF3B3F;
+    color: white
 }
+
 /* Topbar related css */
 .topbar{
 width: 100%;
@@ -108,7 +104,7 @@ color: #FFFFFF;
 
 }
 
-/*content block styling*/
+/*parital view styling*/
 .heading1{
     font-size: 24px;
     font-weight: 900;
