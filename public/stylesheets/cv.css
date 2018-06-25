@@ -13,6 +13,9 @@
     font-weight: 900;
     font-size: 15px;
 }
+.bold2{
+    font-weight: 500;
+}
 .basictext{
     font-family: Calibri;
     font-size: 15px;
@@ -29,11 +32,12 @@
 }
 
 .leftcolumn{
-    display: inline-text;
-    width: 45%;
+    overflow: hidden;
+    float: left;
+    width: 25%;
+    text-align: right;
+    padding-right: 5px;
 }
 .rightcolumn{
-    float: right;
-    width: 45%;
-    margin-left: 45%;
-}
+    overflow: hidden;
+    }
