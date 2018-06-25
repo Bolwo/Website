@@ -10,6 +10,8 @@ var aboutRouter = require('./routes/about');
 var contactRouter = require('./routes/contact');
 var papersRouter = require('./routes/papers');
 var projectsRouter = require('./routes/projects');
+var educationRouter = require('./routes/education');
+var experienceRouter = require('./routes/experience')
 
 var app = express();
 
@@ -29,10 +31,8 @@ app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/papers', papersRouter);
 app.use('/projects', projectsRouter);
-
-app.get('/cv', function (req, res) {
-    console.log(works);
-});
+app.use('/education', educationRouter);
+app.use('/experience', experienceRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
