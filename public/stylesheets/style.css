@@ -28,12 +28,12 @@ body, html {
 
 /* Content related css*/
 .content{
-width: 100%;
+
+width: 98%;
 height: auto;
 background-color: #EFEFEF;
-dislay: inline;
 box-shadow: 3px 3px 3px grey;
-padding: 10px;
+padding: 1%;
 }
 
 .contentheader{
