@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.
+  <div class="github-card" data-github="bolwo" data-width="400" data-height="317" data-theme="medium"></div>
+  <div class="github-card" data-github="bolwo/website" data-width="400" data-height="" data-theme="default"></div>
+  <div class="github-card" data-github="bolwo/alexavoicegame" data-width="400" data-height="153" data-theme="default"></div>
+  <div class="github-card" data-github="bolwo/mpj-latency-tester" data-width="400" data-height="" data-theme="default"></div>
+  <div class="github-card" data-github="bolwo/snowapp" data-width="400" data-height="" data-theme="default"></div>
+  
+  script(src="//cdn.jsdelivr.net/github-cards/latest/widget.js")
+  
