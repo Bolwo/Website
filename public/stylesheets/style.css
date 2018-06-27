@@ -166,3 +166,13 @@ color: #FFFFFF;
 description a {
     font-size: 15px;
 }
+
+#disclaimer {
+    text-align: center;
+    font-size: 12px;
+}
+#contact {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center; 
+}
