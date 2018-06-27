@@ -2,31 +2,34 @@ extends layout
 
 block content
   .row
-    .description
-      .basictext The code for this website that you're looking at! Made with Node.js, Express and Pug view engine (aka Jade). Hosted using AWS Elastic Beanstalk, with AWS Route 53 for domain routing.
-    .rightcolumn
+    .githubcard
       //<div class="github-card" data-github="bolwo" data-width="400" data-height="317" data-theme="medium"></div>
       <div class="github-card" data-github="bolwo/website" data-width="400" data-height="" data-theme="default"></div>
-  .row
-    .description
-      .basictext A proof-of-concept Alexa voice-game, based on original text games such as Zork. This was made to take a closer look at AWS services, and how they can be used in conjuction with Alexa to create extremely simple-to-deploy and scalable applications. <br/> <br/>
-        a(href='./downloads/Alexa_Game_Report.pdf' download="Alexa Game Report") Download Report
     .rightcolumn
-      <div class="github-card" data-github="bolwo/alexavoicegame" data-width="400" data-height="153" data-theme="default"></div>
+      .basictext The code for this website that you're looking at! Made with Node.js, Express and Pug view engine (aka Jade). Hosted using AWS Elastic Beanstalk, with AWS Route 53 for domain routing.
     
   .row
-    .description
-      .basictext An MPJ (a parallel programming platform for Java) latency tester that measures the round-trip time between master and workers. The results show the possible effect that latency times between computers in a cluster have on parallel computing. <br/> <br/>
-        a(href='./downloads/MPJ_Labbook.pdf' download="MPJ Lab book") Download Results
+    .githubcard
+      <div class="github-card" data-github="bolwo/alexavoicegame" data-width="400" data-height="153" data-theme="default"></div>
     .rightcolumn
+      .basictext A proof-of-concept Alexa voice-game, based on original text games such as Zork. This was made to take a closer look at AWS services, and how they can be used in conjuction with Alexa to create extremely simple-to-deploy and scalable applications. <br/> <br/>
+        a(href='./downloads/Alexa_Game_Report.pdf' download="Alexa Game Report") Download Report
+      
+  .row
+    .githubcard
       <div class="github-card" data-github="bolwo/mpj-latency-tester" data-width="400" data-height="" data-theme="default"></div>
       
+    .rightcolumn
+      .basictext An MPJ (a parallel programming platform for Java) latency tester that measures the round-trip time between master and workers. The results show the possible effect that latency times between computers in a cluster have on parallel computing. <br/> <br/>
+        a(href='./downloads/MPJ_Labbook.pdf' download="MPJ Lab book") Download Results
+      
   .row.noborder
-    .description
+    .githubcard
+      <div class="github-card" data-github="bolwo/snowapp" data-width="400" data-height="" data-theme="default"></div>
+    .rightcolumn
       .basictext Unity-built mobile application that can log GPS coordinates, and then generate a height-map for terrain generation based on this GPS data. Originally built for skiing/snowboarding, although became more of a technical look at height-map generation based on innaccurate GPS data. <br/> <br/>
         a(href='./downloads/SnowApp_dissertation.pdf' download="SnowApp Dissertation") Download Dissertation
-    .rightcolumn
-    <div class="github-card" data-github="bolwo/snowapp" data-width="400" data-height="" data-theme="default"></div>
+    
  
   script(src="//cdn.jsdelivr.net/github-cards/latest/widget.js") 
   script.
