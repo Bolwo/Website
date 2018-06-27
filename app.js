@@ -28,7 +28,6 @@ app.use('/', homeRouter);
 app.use('/CV', cvRouter);
 app.use('/home', homeRouter);
 app.use('/contact', contactRouter);
-app.use('/papers', papersRouter);
 app.use('/projects', projectsRouter);
 app.use('/education', educationRouter);
 app.use('/experience', experienceRouter);
