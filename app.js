@@ -8,7 +8,6 @@ var indexRouter = require('./routes/index');
 var cvRouter = require('./routes/CV');
 var homeRouter = require('./routes/home');
 var contactRouter = require('./routes/contact');
-var papersRouter = require('./routes/papers');
 var projectsRouter = require('./routes/projects');
 var educationRouter = require('./routes/education');
 var experienceRouter = require('./routes/experience')
