@@ -4,6 +4,7 @@ html
     title= 'Jaco van Cranenburgh'
     link(rel='stylesheet', href='/stylesheets/style.css')
   #portraitphone Please use landscape mode!
+    .basictext Full mobile support is in development.
   #layout
     #outer
       #static
@@ -32,8 +33,9 @@ html
               block content
 
 script(src="https://code.jquery.com/jquery-3.3.1.min.js")
-
-
-
+script.
+  window.addEventListener("orientationchange", function() {
+    window.location.reload();
+  }, false);
 
 
