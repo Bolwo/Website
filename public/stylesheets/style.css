@@ -139,7 +139,13 @@ color: #FFFFFF;
 .columns li{
     display: inline;
 }
+.photocolumn{
+    overflow: hidden;
+    float: left;
 
+    text-align: right;
+    padding-right: 5px;
+}
 .leftcolumn{
     overflow: hidden;
     float: left;
