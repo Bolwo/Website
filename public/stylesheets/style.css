@@ -27,6 +27,7 @@ body, html {
 #dynamic{
   overflow: hidden;
   box-shadow: 3px 3px 3px grey;
+  border-radius: 3px;
 }
 
 /* Content related css*/
@@ -52,6 +53,7 @@ width: 150px;
 height: auto;
 float: left;
 box-shadow: 3px 3px 3px grey;
+border-radius: 3px;
 }
 .sidemenu a{
   color: black;
@@ -64,6 +66,7 @@ padding-right: 5%;
 width: 90%;
 height: 35px;
 border-bottom: solid;
+border-color: grey;
 border-width: 1px;
 text-align: center;
 padding-top: 10%;
@@ -75,14 +78,11 @@ border-bottom: none;
 .item:hover {
 background-color: #ade0eb;
 }
-.item:active {
-background-color: #FF3B3F;
-border-color: white;
-color: white;
-}
+
 .item#clicked{
     background-color: #FF3B3F;
     color: white; 
+    border-color: grey;
 }
 
 /* Topbar related css */
