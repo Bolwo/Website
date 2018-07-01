@@ -182,6 +182,29 @@ githubcard a {
 #contact {
     font-size: 15px;
     text-align: left; 
-
-
 }
+
+#portraitphone {
+    width:0;
+    height: 0;
+    overflow: hidden;
+}
+ @media all and (orientation:portrait) {
+     #portraitphone {
+         width: 110vw;
+         height: 110vh;
+         background-color: lightgray;
+         position: absolute;
+         color: black;
+         font-size: 100px;
+         padding: 10px;
+         font-family: Calibri;
+         text-align: center;
+     }
+     #layout * {
+         width: 0;
+         height: 0;
+         overflow: hidden;
+         margin: 0;
+     }
+  }
