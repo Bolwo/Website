@@ -144,7 +144,7 @@ color: #FFFFFF;
     float: left;
 
     text-align: right;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 .leftcolumn{
     overflow: hidden;
@@ -155,6 +155,7 @@ color: #FFFFFF;
 }
 .rightcolumn{
     overflow: hidden;
+
 }
 
 .githubcard{
