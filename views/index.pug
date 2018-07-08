@@ -1,5 +1,33 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+  .photocolumn
+    img(src="/images/photo.jpg" alt="PLACEHOLDER" height="230px")
+  .rightcolumn
+    .heading1.fontcambria.black Jaco van Cranenburgh 
+    .heading2.fontcambria.black Richmond, London <br/> mail@jaco.site 
+    p
+    .basictext I am a hardworking software developer with a Upper Second Class Honours BSc Computer Science Degree. Keen to learn, adapt and improve my technical skills through a career. I have been very interested in computing since I was young, and over the last 7 years have become passionate about programming and moving forward into a software development career.
+    p
+    .basictext DOB: 9th August 1996 <br/>Gender: Male <br/> Nationality: British/Dutch
+    <br/>
+  .bold1 Technical Skills
+  .columns.basictext
+      ul 
+        li - &nbsp; HTML/CSS <br/>
+        li - &nbsp;JavaScript <br/>
+        li - &nbsp;C# <br/> 
+        li - &nbsp;Python <br/>
+        li - &nbsp;SQL <br/>
+        li <br/>
+        li <br/>
+        li - &nbsp;Java <br/>
+        li - &nbsp;Node.js <br/>
+        li - &nbsp;ASP.net <br/>
+        li - &nbsp;IT Support <br/>
+        li - &nbsp;AWS Lambda/Beanstalk <br/>
+
+  script.
+    window.onload = function() {
+      $('#Home').attr('class', 'itemclicked');
+    }
+    

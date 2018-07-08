@@ -1,20 +1,15 @@
-extends layout
-
+.contentheader
+  .title #{title}
 block content
-  .heading2.black For more detailed information or discussion, please feel free to contact me: <br/>
-  .basictext
-    #contact 
-      a(href="mailto:mail@jaco.site") mail@jaco.site<br/>
-      a(href="http://www.linkedin.com/in/jacovan") linkedin.com/in/jacovan<br/>
-      a(href="http://www.github.com/bolwo") github.com/bolwo
-  p
-  .heading2.black For a PDF version of my CV:
+  .content
+    .heading2.black For more detailed information or discussion, please feel free to contact me: <br/>
     .basictext
-      #contact
-        a(href='./downloads/CV.pdf' download="Jaco van Cranenburgh CV") Download CV
-
-  script.
-    window.onload = function(){
-      var button = document.getElementById("Contact");
-      button.id = "clicked";
-    };
+      #contact 
+        a(href="mailto:mail@jaco.site") mail@jaco.site<br/>
+        a(href="http://www.linkedin.com/in/jacovan") linkedin.com/in/jacovan<br/>
+        a(href="http://www.github.com/bolwo") github.com/bolwo
+    p
+    .heading2.black For a PDF version of my CV:
+      .basictext
+        #contact
+          a(href='./downloads/CV.pdf' download="Jaco van Cranenburgh CV") Download CV

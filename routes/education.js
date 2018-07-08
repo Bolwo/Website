@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET about page. */
 router.get('/', function(req, res, next) {
-  res.render('education', { title: 'Curriculum Vitae - Education' });
+  res.render('education', { layout: false, title: 'Curriculum Vitae - Education' });
 });
 
 module.exports = router;

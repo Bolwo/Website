@@ -7,22 +7,15 @@ html
     #outer
       #static
         .sidemenu
-          a(href='/home')
-            .item.start#Home Intro
+          li.item#Home Intro
             
-          a(href='/Education')  
-            .item#Education Education
+          li.item#Education Education
            
-          a(href='/Experience')
-            .item#Experience Experience
+          li.item#Experience Experience
 
-          a(href='/Projects') 
-            .item#Projects Projects
+          li.item#Projects Projects
             
-          a(href='/Contact')  
-           .item.end#Contact Contact
-         
-
+          li.item.end#Contact Contact
       #dynamic
         .contentheader
           .title #{title}
@@ -32,8 +25,34 @@ html
 
 script(src="https://code.jquery.com/jquery-3.3.1.min.js")
 script.
-  window.addEventListener("orientationchange", function() {
-    window.location.reload();
-  }, false);
+  $(".item").click(function() {
+    console.log($('.itemclicked'))
+    $('.itemclicked').each(function(i,obj) {
+      console.log(i);
+      $(this).attr('class', 'item'); //change to .item class
+    });
+    $("#" + event.target.id).attr('class', 'itemclicked'); //change to .itemclicked
+    ajaxcall(event.target.id);
+  });
+
+  $(".item").hover(function(){
+    $(this).css("opacity", "2");
+    }, function(){
+    $(this).css("opacity", "1");
+  });
+
+  
+  function ajaxcall(section) {
+    $.ajax({
+        url: '/' + section,
+        dataType: "html",
+        success: function(data) {
+            $("#dynamic").html(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('error ' + textStatus + " " + errorThrown);
+        }
+    });
+  }
 
 
