@@ -32,11 +32,11 @@ body, html {
 
 /* Content related css*/
 .content{
-width: 98%;
+width: 97%;
 height: auto;
 background-color: #EFEFEF;
 box-shadow: 3px 3px 3px grey;
-padding: 1%;
+padding: 1.5%;
 }
 
 .contentheader{
