@@ -4,6 +4,7 @@ block content
     //on website load, set default menu option as clicked, and load home page in partial.
     window.onload = function() {
       $('#Home').attr('class', 'itemclicked');
+      $(".content").html("Loading...");
       $.ajax({
         url: '/home',
         dataType: "html",

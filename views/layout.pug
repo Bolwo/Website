@@ -41,6 +41,7 @@ script.
 
   
   function ajaxcall(section) {
+    $(".content").html("Loading...");
     $.ajax({
         url: '/' + section,
         dataType: "html",
@@ -52,5 +53,3 @@ script.
         }
     });
   }
-
-//TODO add loading to the partial views (feels horrible if on slow connection, no obvious loading)
