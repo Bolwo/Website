@@ -25,7 +25,7 @@ html
 
 script(src="https://code.jquery.com/jquery-3.3.1.min.js")
 script.
-  $(".item").click(function() {
+  $(".item").click(function(event) {
     $('.itemclicked').each(function(i,obj) {
       $(this).attr('class', 'item'); //change to .item class
     });
