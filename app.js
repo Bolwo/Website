@@ -11,7 +11,11 @@ var projectsRouter = require('./routes/projects');
 var educationRouter = require('./routes/education');
 var experienceRouter = require('./routes/experience')
 
+
 var app = express();
+
+app.set('port', process.env.PORT || 8080);
+app.listen(app.get('port'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -85,6 +85,7 @@ body, html {
     border-width: 1px;
     text-align: center;
     padding-top: 10%;
+    cursor: pointer;
 }
 
 .itemclicked {
@@ -101,6 +102,7 @@ body, html {
     background-color: #FF3B3F;
     color: white;
     border-color: grey;
+    cursor: pointer;
 }
 
 .item.end {
@@ -271,6 +273,7 @@ githubcard a {
         border-width: 1px;
         text-align: center;
         padding-top: 15px;
+        cursor: pointer;
     }
     .itemclicked {
         display: inline-block;
@@ -291,12 +294,14 @@ githubcard a {
         background-color: #FF3B3F;
         color: white;
         border-color: grey;
+        cursor: pointer;
     }
     .item.end {
         border-right: none;
     }
     .item:hover {
         background-color: #ade0eb;
+
     }
     #dynamic {
         overflow: hidden;
