@@ -11,11 +11,12 @@ var contactRouter = require('./routes/contact');
 var projectsRouter = require('./routes/projects');
 var educationRouter = require('./routes/education');
 var experienceRouter = require('./routes/experience')
+var solitaireRouter = require('./routes/solitaire')
 
 
 var app = express();
 
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico'))); 
+app.use(favicon(path.join(__dirname, 'favicon.ico'))); 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -32,6 +33,7 @@ app.use('/contact', contactRouter);
 app.use('/projects', projectsRouter);
 app.use('/education', educationRouter);
 app.use('/experience', experienceRouter);
+app.use('/solitaire', solitaireRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
