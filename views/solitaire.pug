@@ -1,59 +1,62 @@
-block content
-    canvas#can 
-    img#img(src="images/card.jpg")
+block content.
+    <canvas id="can"></canvas>
+    <img id="img" style="margin-left:-2000px; position: absolute;"src="/images/card.jpg">
 
-style.
-    body{
-        margin: 0;
-        padding: 0;
-    }
-    #can {
-        padding: 0;
-        margin: 0;
-    }
-    #img{
-        margin-left:-2000px; position: absolute;
-    }
-
-script.
-    var img = document.getElementById('img');
-    img.style.visibility = 'hidden';
-
-    var canvas = document.getElementById('can');
-    var ctx = canvas.getContext("2d");
-
-    var resize = function () {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    };
-
-    resize();
-
-    var pos, vel;
-    pos = {
-        x: 150,
-        y: 24
-    };
-    vel = {
-        x: 20,
-        y: 20
-    };
-
-    img.onload = function() {
-        setInterval(loop, 1000/60);
-    };
-
-    function loop() {
-        pos.x += vel.x;
-        pos.y += vel.y;
-        if (pos.x < 0 || pos.x > canvas.width - 100) {
-        vel.x *= -1;
+    style.
+        body{
+            margin: 0;
+            padding: 0;
         }
-        if (pos.y < 0 || pos.y > canvas.height - 135) {
-        vel.y *= -1;
+        #can {
+            padding: 0;
+            margin: 0;
         }
+    script.
+        var img = document.getElementById('img');
+        img.style.visibility = 'hidden';
 
-        console.log(pos.x, pos.y);
-        ctx.drawImage(img, pos.x, pos.y, 100, 135);
-    };
-       
+        var canvas = document.getElementById('can');
+        var ctx = canvas.getContext("2d");
+
+        var resize = function () {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        };
+
+        resize();
+
+        var cards = [
+            "Saab",
+            "Volvo",
+            "BMW"
+        ];
+
+        var pos, vel;
+        pos = {
+            x: 150,
+            y: 24
+        };
+        vel = {
+            x: 10,
+            y: 10
+        };
+
+        img.onload = function() {
+            setInterval(loop, 1000/30);
+        };
+
+        function loop() {
+            pos.x += vel.x;
+            pos.y += vel.y;
+            if (pos.x < 0 || pos.x > canvas.width - 100) {
+            vel.x *= -1;
+            }
+            if (pos.y < 0 || pos.y > canvas.height - 135) {
+            vel.y *= -1;
+            }
+
+            console.log(pos.x, pos.y);
+            ctx.drawImage(img, pos.x, pos.y, 100, 135);
+        };
+        
+    </script>
