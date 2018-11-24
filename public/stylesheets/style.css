@@ -258,7 +258,6 @@ githubcard a {
         min-width: 500px;
         height: 50px;
         float: none;
-        box-shadow: 3px 3px 3px grey;
         border-radius: 3px;
         white-space: nowrap;
     }
@@ -310,7 +309,6 @@ githubcard a {
     }
     #dynamic {
         overflow: hidden;
-        box-shadow: 3px 3px 3px grey;
         border-radius: 3px;
     }
 }
