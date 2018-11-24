@@ -12,7 +12,7 @@ body, html {
 #outer {
     max-width: 90%;
     width: 1000px;
-    min-width: 500px;
+    min-width: 400px;
     height: auto;
     background-color: white;
     margin: 0 auto;
@@ -246,16 +246,25 @@ githubcard a {
     #static {
         float: none;
         height: 50px;
-        min-width: 500px;
+        width: 100%;
+        min-width: 400px;
         min-height: 50px;
-        margin-right: 0;
         margin-bottom: 10px;
     }
+    #dynamic {
+
+    }
+    #outer{
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 !important;
+    }
     .sidemenu {
+        box-sizing: border-box;
         position: fixed;
         background-color: #b7ebff;
-        width: 90%;
-        min-width: 500px;
+        width: 100%;
+        min-width: 400px;
         height: 50px;
         float: none;
         border-radius: 3px;
