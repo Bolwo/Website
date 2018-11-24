@@ -5,13 +5,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index')
+var indexRouter = require('./routes/index');
 var homeRouter = require('./routes/home');
 var contactRouter = require('./routes/contact');
 var projectsRouter = require('./routes/projects');
 var educationRouter = require('./routes/education');
-var experienceRouter = require('./routes/experience')
-var solitaireRouter = require('./routes/solitaire')
+var experienceRouter = require('./routes/experience');
+var solitaireRouter = require('./routes/solitaire');
 
 
 var app = express();

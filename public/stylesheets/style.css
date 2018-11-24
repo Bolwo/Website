@@ -6,7 +6,7 @@ body, html {
 
 #layout {
     width: 100%;
-    font-family: Verdana;
+    font-family: "calibri";
 }
 
 #outer {
@@ -31,37 +31,44 @@ body, html {
 
 #dynamic {
     overflow: hidden;
-    box-shadow: 3px 3px 3px grey;
+    /* box-shadow: 3px 3px 3px grey; */
     border-radius: 3px;
 }
 
 /* Content related css*/
-
 .content {
-    width: 97%;
+    width: 100%;
+    box-sizing: border-box;
     height: auto;
     background-color: #EFEFEF;
-    box-shadow: 3px 3px 3px grey;
+    /* box-shadow: 3px 3px 3px grey; */
     padding: 1.5%;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+    border-bottom: none;
 }
 
 .contentheader {
     width: 100%;
     height: 50px;
-    background-color: #FF3B3F;
+    background-color: #3BC9FF;
+    /* #3bc9ff */
 }
 
 /* Side menu related css*/
 
 .sidemenu {
     position: fixed;
-    background-color: #CAEBF2;
+    background-color: #b7ebff;
     border-width: 1px;
     width: 150px;
     height: auto;
     float: left;
-    box-shadow: 3px 3px 3px grey;
+    /* box-shadow: 3px 3px 3px grey; */
     border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+    border-bottom: none;
 }
 .sidemenu li {
     list-style-type: none;
@@ -99,7 +106,7 @@ body, html {
     border-width: 1px;
     text-align: center;
     padding-top: 10%;
-    background-color: #FF3B3F;
+    background-color: #3BC9FF;
     color: white;
     border-color: grey;
     cursor: pointer;
@@ -110,7 +117,7 @@ body, html {
 }
 
 .item:hover {
-    background-color: #ade0eb;
+    background-color: #3BC9FF;
 }
 
 /* Topbar related css */
@@ -155,12 +162,7 @@ body, html {
 }
 
 .basictext {
-    font-family: Calibri;
     font-size: 15px;
-}
-
-.fontcambria {
-    font-family: Cambria;
 }
 
 .color1 {
@@ -198,6 +200,7 @@ body, html {
     overflow: hidden;
     float: left;
     width: 50%;
+    height: 160px;
     text-align: left;
     padding-right: 5px;
 }
@@ -229,7 +232,9 @@ githubcard a {
 }
 
 /** Mobile Phone CSS **/
-
+@media screen and (max-width: 1130px) {
+    .githubcard {display: none;}
+}
 @media all and (orientation:portrait) {
     /**#layout * {
          width: 0;
@@ -248,7 +253,7 @@ githubcard a {
     }
     .sidemenu {
         position: fixed;
-        background-color: #CAEBF2;
+        background-color: #b7ebff;
         width: 90%;
         min-width: 500px;
         height: 50px;
@@ -291,7 +296,7 @@ githubcard a {
         border-width: 1px;
         text-align: center;
         padding-top: 15px;
-        background-color: #FF3B3F;
+        background-color: #3BC9FF;
         color: white;
         border-color: grey;
         cursor: pointer;
@@ -300,7 +305,7 @@ githubcard a {
         border-right: none;
     }
     .item:hover {
-        background-color: #ade0eb;
+        background-color: #3BC9FF;
 
     }
     #dynamic {
